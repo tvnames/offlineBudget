@@ -16,8 +16,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/budget";
-// const MONGODB_URI =
-//   "mongodb+srv://tvnames:INdianapolis12!!@cluster0.w8jgr.mongodb.net/Budget?retryWrites=true&w=majority";
+
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useFindAndModify: false,
